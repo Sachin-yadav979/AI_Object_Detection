@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Object Detection</title>
+</head>
+
+<body>
+
+<h2>AI Camera Object Detection</h2>
+
+<video id="video" width="400" autoplay></video>
+
+<script>
+navigator.mediaDevices.getUserMedia({ video: true })
+.then(function(stream) {
+document.getElementById("video").srcObject = stream;
+});
+</script>
+
+</body>
+</html>
